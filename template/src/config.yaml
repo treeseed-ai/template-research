@@ -46,25 +46,25 @@ models:
       audience: []
   docs:
     defaults:
-      tags: []
+      groupIds: []
   notes:
     defaults:
       author: research-steward
       draft: false
-      tags: []
+      groupIds: []
   questions:
     defaults:
       draft: false
-      tags: []
+      groupIds: []
   objectives:
     defaults:
       draft: false
-      tags: []
+      groupIds: []
   proposals:
     defaults:
       draft: false
-      tags: []
+      groupIds: []
   decisions:
     defaults:
       draft: false
-      tags: []
+      groupIds: []
