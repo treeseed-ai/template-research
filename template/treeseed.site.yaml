@@ -5,7 +5,7 @@ contactEmail: hello@example.com
 hosting:
   kind: hosted_project
   registration: optional
-  marketBaseUrl: https://knowledge.coop
+  marketBaseUrl: https://api.treeseed.dev
   teamId: __SITE_SLUG__
   projectId: __SITE_SLUG__
 cloudflare:
