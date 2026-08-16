@@ -36,20 +36,6 @@ capabilities:
       - question_answer
       - knowledge_update
       - linked_note
-permissionPolicy:
-  modes:
-    planning:
-      network:
-        allowWeb: true
-        allowedDomains:
-          - example.com
-          - iana.org
-    acting:
-      network:
-        allowWeb: true
-        allowedDomains:
-          - example.com
-          - iana.org
 activityProfiles:
   planning:
     activityType: planning
@@ -62,35 +48,83 @@ activityProfiles:
     branchPolicy:
       kind: main-planning-content
       base: main
-    contentAccess:
-      read:
-        models:
-          - question
-          - objective
-          - note
-          - proposal
-          - decision
-          - knowledge
-          - agent
-        actions:
+    permissions:
+      content:
+        question:
+          operations:
           - describe
           - query
           - read
-      write:
-        models:
-          - question
-          - objective
-          - note
-          - proposal
-          - decision
-          - knowledge
-          - agent
-        actions:
           - create
           - update
           - link
           - validate
           - commit
+        objective:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        note:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        proposal:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        decision:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        knowledge:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        agent:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+      network:
+        allowWeb: true
+        allowedDomains:
+        - example.com
+        - iana.org
       commit:
         allowed: true
     tools:
@@ -142,35 +176,83 @@ activityProfiles:
     branchPolicy:
       kind: read-only
       base: main
-    contentAccess:
-      read:
-        models:
-          - question
-          - objective
-          - note
-          - proposal
-          - decision
-          - knowledge
-          - agent
-        actions:
+    permissions:
+      content:
+        question:
+          operations:
           - describe
           - query
           - read
-      write:
-        models:
-          - question
-          - objective
-          - note
-          - proposal
-          - decision
-          - knowledge
-          - agent
-        actions:
           - create
           - update
           - link
           - validate
           - commit
+        objective:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        note:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        proposal:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        decision:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        knowledge:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        agent:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+      network:
+        allowWeb: true
+        allowedDomains:
+        - example.com
+        - iana.org
       commit:
         allowed: false
     tools:
@@ -213,35 +295,83 @@ activityProfiles:
     branchPolicy:
       kind: read-only
       base: main
-    contentAccess:
-      read:
-        models:
-          - question
-          - objective
-          - note
-          - proposal
-          - decision
-          - knowledge
-          - agent
-        actions:
+    permissions:
+      content:
+        question:
+          operations:
           - describe
           - query
           - read
-      write:
-        models:
-          - question
-          - objective
-          - note
-          - proposal
-          - decision
-          - knowledge
-          - agent
-        actions:
           - create
           - update
           - link
           - validate
           - commit
+        objective:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        note:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        proposal:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        decision:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        knowledge:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        agent:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+      network:
+        allowWeb: true
+        allowedDomains:
+        - example.com
+        - iana.org
       commit:
         allowed: false
     tools:
@@ -284,35 +414,83 @@ activityProfiles:
     branchPolicy:
       kind: main-planning-content
       base: main
-    contentAccess:
-      read:
-        models:
-          - question
-          - objective
-          - note
-          - proposal
-          - decision
-          - knowledge
-          - agent
-        actions:
+    permissions:
+      content:
+        question:
+          operations:
           - describe
           - query
           - read
-      write:
-        models:
-          - question
-          - objective
-          - note
-          - proposal
-          - decision
-          - knowledge
-          - agent
-        actions:
           - create
           - update
           - link
           - validate
           - commit
+        objective:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        note:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        proposal:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        decision:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        knowledge:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+        agent:
+          operations:
+          - describe
+          - query
+          - read
+          - create
+          - update
+          - link
+          - validate
+          - commit
+      network:
+        allowWeb: true
+        allowedDomains:
+        - example.com
+        - iana.org
       commit:
         allowed: true
     tools:
